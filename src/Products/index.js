@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import './style.css'
 import { Link } from 'react-router-dom';
-
 const Products = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -32,7 +31,7 @@ const Products = () => {
       {products.map((item) => (
         <div key={item.id} className="productkey">
           {/* <h3>{item.title}</h3> */}
-          <img  src={item.images[0]} alt={item.title} className="productimage" />
+          <img  src={item.images[1]} alt={item.title} className="productimage" />
         <p className="productprice">price &nbsp;ksh{item.price}</p>
         <p className="productdiscount">discount&nbsp;{item.discountPercentage}%</p>
         <Link to={`/ProductDetails/${item.id}` }className="buton">

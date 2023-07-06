@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-
 const ProductDetails = () => {
   const {productId} = useParams();
   const [product, setProduct] = useState(null);
