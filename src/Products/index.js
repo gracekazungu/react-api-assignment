@@ -22,18 +22,19 @@ const Products = () => {
   if (loading) {
     return <h2>Loading...</h2>;
   }
-  // if (products.length === 0) {
-  //   return <h2>No products found.</h2>;
-  // }
+
   return (
+    
     <div className="product">
-      {/* <h1>Product</h1> */}
       {products.map((item) => (
         <div key={item.id} className="productkey">
-          {/* <h3>{item.title}</h3> */}
-          <img  src={item.images[1]} alt={item.title} className="productimage" />
-        <p className="productprice">price &nbsp;ksh{item.price}</p>
-        <p className="productdiscount">discount&nbsp;{item.discountPercentage}%</p>
+          <h3>{item.title}</h3>
+          <img  src={item.images[1]} className="prdctimage" />
+        <p className="prdctprice">Price :ksh{item.price}</p>
+        <p className="prdctdiscount">Discount:{item.discountPercentage}%</p>
+        <button className="butn">ADD TO CART</button>
+        <br/>
+        <br/>
         <Link to={`/ProductDetails/${item.id}` }className="buton">
             <button type="submit" className="button">View details</button >
           </Link>

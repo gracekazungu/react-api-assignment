@@ -1,5 +1,5 @@
 nav {
-    background-color: #CE610E;
+    background-color: black;
     color: #fff;
     display: flex;
     justify-content: center;
@@ -17,6 +17,7 @@ nav {
   a {
     color: #fff;
     text-decoration: none;
+    border: none;
   }
   a:hover {
     text-decoration: underline;

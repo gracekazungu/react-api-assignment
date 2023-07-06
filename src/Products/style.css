@@ -6,18 +6,25 @@
 .productkey{
     margin: 10px;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #080101;
   border-radius: 5px;
   text-align: center;
 }
-.productimage{
-    width: 200px;
-    height: 200px;
+.prdctimage{
+    width: 250px;
+    height: 250px;
     object-fit: cover;
 }
-.productprice{
+
+.prdctprice{
     font-weight: bold;
 }
-.productdiscount{
-    color: red;
+.prdctdiscount{
+  font-weight: bold;
+}
+.butn{
+  background-color: rgb(211, 177, 114);
+  border-radius: 5px;
+  padding: 10px;
+  color: black;
 }

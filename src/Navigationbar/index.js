@@ -12,7 +12,7 @@ const Navigationbar= () => {
           <a href="/product">Product</a>
         </li>
         <li>
-          <a href="/addproduct">Add products</a>
+          <a href="/addproduct">Add product</a>
         </li>
       </ul>
     </nav>
