@@ -3,7 +3,7 @@ import './style.css'
 import { Link } from 'react-router-dom';
 const Products = () => {
   const [products, setProducts] = useState([]);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false);  
   useEffect(() => {
     const getProducts = async () => {
       try {
