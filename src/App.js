@@ -8,12 +8,14 @@ import ProductDetails from './ProductDetails';
 function App() {
   return (
     <div>
+      {/* <addProduct/> */}
       <Navigationbar/>
       <BrowserRouter>
       <Routes>
         <Route index element={<Login/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/product' element={<Products/>}/>
+        {/* <Route path='/addproduct' element={<addProduct/>}/> */}
         <Route path='/ProductDetails/:productId' element={<ProductDetails/>}/>
       </Routes>
       </BrowserRouter>
