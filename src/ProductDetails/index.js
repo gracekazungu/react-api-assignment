@@ -23,10 +23,10 @@ const ProductDetails = () => {
       <h1>Product Details</h1>
       <div>
         <img src={product.thumbnail} alt={product.title} />
-        <h2>{product.title}</h2>
-        <p>{product.brand}</p>
-        <p>{product.price}</p>
-        <h4>{product.rating}</h4>
+        <h2>Title:{product.title}</h2>
+        <p>Brand:{product.brand}</p>
+        <p>Price:{product.price}.0/=</p>
+        <h4>Rating:{product.rating}</h4>
       </div>
     </div>
   );
